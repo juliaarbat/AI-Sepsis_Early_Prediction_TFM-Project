@@ -1,0 +1,113 @@
+﻿variable;variable_label;dtype;n_null;pct_null
+DIURESIS;Urine output;float64;277306;99,99
+albumina;Albumin;float64;277323;99,99
+bal_germen;bal organism;object;277124;99,92
+fibrinogen;Fibrinogen;float64;275932;99,49
+broncoaspirat_germen;broncoaspirat organism;object;273180;98,5
+bilirubina_total_pre_retorn_critics_3d;bilirubin total pre return critical care 3d;float64;270798;97,64
+data_bilirubina_total_pre_retorn_critics_3d;date bilirubin total pre return critical care 3d;datetime64[ns];270798;97,64
+creatinina_pre_retorn_critics_3d;creatinine pre return critical care 3d;float64;268242;96,72
+data_creatinina_pre_retorn_critics_3d;date creatinine pre return critical care 3d;datetime64[ns];268242;96,72
+data_plaquetes_pre_retorn_critics_3d;date platelets pre return critical care 3d;datetime64[ns];268252;96,72
+plaquetes_pre_retorn_critics_3d;platelets pre return critical care 3d;float64;268252;96,72
+GLASGOW;Glasgow;float64;267113;96,31
+FIO2;FiO2;float64;265934;95,89
+aspirat_traqueal_germen;aspirat traqueal organism;object;264718;95,45
+troponina;Troponin;float64;257184;92,73
+hemocultiu_germen;blood culture organism;object;257029;92,68
+exc_base_venos;Venous base excess;float64;256692;92,55
+procalcitonina;procalcitonina;float64;256582;92,51
+bicarbonat_venos;Venous bicarbonate;float64;256152;92,36
+lactat_venos;Venous lactate;float64;256159;92,36
+paco2_venos;Venous PCO2;float64;256125;92,35
+pao2_venos;Venous PO2;float64;256137;92,35
+ph_venos;Venous pH;float64;256045;92,32
+hemocultiu_positiu_data_extraccio;blood culture positive date extraccio;datetime64[ns];253735;91,49
+hemocultiu_temps_positivitat_h;blood culture time positivitat h;float64;253735;91,49
+exc_base_arterial;Arterial base excess;float64;253435;91,38
+lactat_arterial;Arterial lactate;float64;252983;91,22
+bicarbonat_arterial;Arterial bicarbonate;float64;252928;91,2
+paco2_arterial;Arterial PaCO2;float64;252899;91,19
+pao2_arterial;Arterial PaO2;float64;252913;91,19
+ph_arterial;Arterial pH;float64;252900;91,19
+proteines_totals;Total proteins;float64;252618;91,09
+urocultiu_resultat;urine culture result;object;219206;79,04
+bilirubina_total;Total bilirubin;float64;211942;76,42
+got_ast;AST;float64;207791;74,92
+data_hora_alta_critics;Critical care discharge datetime;datetime64[ns];185386;66,84
+urea;Urea;float64;173943;62,72
+pcr;C-reactive protein;float64;172862;62,33
+temps_protrombina_pct;Prothrombin time;float64;167855;60,52
+glucosa;Glucose;float64;159899;57,65
+creatinina;Creatinine;float64;147052;53,02
+leucocits;Leukocytes;float64;145314;52,4
+plaquetes;Platelets;float64;145335;52,4
+hemoglobina;Hemoglobin;float64;145289;52,39
+granulocits_immadurs;Immature granulocytes;float64;143821;51,86
+pct_neutrofils;Neutrophils;float64;143819;51,86
+hematocrit;Hematocrit;float64;143751;51,83
+temps_cirurgia;Surgery time;float64;107948;38,92
+TAM;MAP;float64;45380;16,36
+DBP;DBP;float64;40128;14,47
+SBP;SBP;float64;40111;14,46
+HR;Heart rate;float64;39061;14,08
+O2SAT;O2 saturation;float64;36804;13,27
+RESP;Respiratory rate;float64;34556;12,46
+TEMP;Temperature;float64;26063;9,4
+porta_o2;Oxygen support;float64;25224;9,09
+COMORB_AGAMMAGLOBULINEMIA;Agammaglobulinemia;int64;0;0,0
+COMORB_ASPLENIA;Asplenia;int64;0;0,0
+COMORB_CIRROSI_HEPATICA;Liver cirrhosis;int64;0;0,0
+COMORB_DIABETES_MELLITUS;Diabetes mellitus;int64;0;0,0
+COMORB_ENOLISME_SEVER;Severe alcohol use;int64;0;0,0
+COMORB_ESPLENECTOMIA;Splenectomy;int64;0;0,0
+COMORB_HIPOGAMMAGLOBULINEMIA;Hypogammaglobulinemia;int64;0;0,0
+COMORB_IRC_DIALISI;Chronic kidney disease on dialysis;int64;0;0,0
+COMORB_MALABSORTIVES;Malabsorptive disorder;int64;0;0,0
+COMORB_MALNUTRICIO_SEVERA;Severe malnutrition;int64;0;0,0
+COMORB_NEOPLASIA_HEMATOLOGICA;Haematological neoplasm;int64;0;0,0
+COMORB_NEOPLASIA_SOLIDA;Solid neoplasm;int64;0;0,0
+COMORB_NEUTROPENIA_GREU;Severe neutropenia;int64;0;0,0
+COMORB_TRASPLANT_MOLL_OS;Bone marrow transplant;int64;0;0,0
+COMORB_TRASPLANT_ORGAN_SOLID;Solid organ transplant;int64;0;0,0
+COMORB_VIH_SIDA;HIV/AIDS;int64;0;0,0
+DataAlta;Discharge date;datetime64[ns];0;0,0
+DataIngres;Admission date;datetime64[ns];0;0,0
+DataIniciUrgencies;Emergency department start date;datetime64[ns];0;0,0
+Episodi;Episodi;object;0;0,0
+Nhc;Nhc;object;0;0,0
+ag_legionella;Legionella antigen;int64;0;0,0
+ag_pneumococ;Pneumococcal antigen;int64;0;0,0
+antibiotic;Active antibiotic;int64;0;0,0
+antibiotics_previs_90d;antibiotics previous 90d;int64;0;0,0
+atb_duracio;antibiotic duracio;int64;0;0,0
+centre_origen;Origin center;object;0;0,0
+cirurgia;Surgery;int64;0;0,0
+codi_servei_admissor;Admitting service code;object;0;0,0
+colonitzacio_previa_blee;colonisation previa blee;int64;0;0,0
+colonitzacio_previa_cre;colonisation previa cre;int64;0;0,0
+colonitzacio_previa_mrsa;colonisation previa mrsa;int64;0;0,0
+colonitzacio_previa_vre;colonisation previa vre;int64;0;0,0
+cultiu_positiu_previ_90d;Previous positive culture 90d;int64;0;0,0
+data_index;Analysis date;datetime64[ns];0;0,0
+dia_relatiu;day relatiu;int64;0;0,0
+diagnostic_ingres;Admission diagnosis;object;0;0,0
+dispositius_invasius_previs;Previous invasive devices;int64;0;0,0
+edat;Age;float64;0;0,0
+en_critics_dia;Critical care on day;int64;0;0,0
+font_admissio;Admission source;object;0;0,0
+hemocultiu_positiu;Positive blood culture;int64;0;0,0
+hospitalitzacio_recent_90d;Recent hospitalization 90d;int64;0;0,0
+passa_per_critics;Critical care stay;int64;0;0,0
+reingres_30d;Readmission 30d;int64;0;0,0
+sexe;Sex;int64;0;0,0
+temps_cirurgia_disponible;Surgery time available;int64;0;0,0
+temps_critics;Critical care time;float64;0;0,0
+temps_critics_dia;Critical care time on day;float64;0;0,0
+urgencia_cirurgia;Urgent surgery;int64;0;0,0
+vasopressor_adrenalina;vasopressor adrenalina;int64;0;0,0
+vasopressor_dobutamina;vasopressor dobutamina;int64;0;0,0
+vasopressor_dopamina;vasopressor dopamina;int64;0;0,0
+vasopressor_multiple;Multiple vasopressors;int64;0;0,0
+vasopressor_noradrenalina;vasopressor noradrenalina;int64;0;0,0
+vasopressor_qualsevol;Vasopressor;int64;0;0,0

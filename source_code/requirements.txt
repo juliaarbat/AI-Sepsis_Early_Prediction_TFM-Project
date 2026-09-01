@@ -1,0 +1,11 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+optuna>=3.6
+torch>=2.12
+shap>=0.46
+xgboost>=2.0
+catboost>=1.2
+lightgbm>=4.0

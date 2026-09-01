@@ -1,0 +1,36 @@
+{
+  "n_rows": 277341,
+  "n_episodes": 31531,
+  "parameters": {
+    "lab_ffill_limit_days": 14,
+    "vitals_ffill_limit_days": 3,
+    "critical_care_return_min_hours": 72
+  },
+  "imputation_criteria": {
+    "FIO2_missing": "21% ambient air",
+    "GLASGOW_missing": "15 normal",
+    "PaO2_FIO2_respiratory": "PaO2/FiO2 when PaO2 is available",
+    "O2SAT_FIO2_respiratory": "O2SAT/FiO2 when PaO2 is missing",
+    "bilirubina_missing": "hepatic normality if no recent value is available",
+    "creatinina_plaquetes_missing": "not imputed as normal; requires observed, pre-return, or forward-filled value",
+    "renal": "renal component calculated from creatinine; DIURESIS excluded due to missingness",
+    "initial_missing_sofa_labs": "no longitudinal delta until first day with creatinine and platelets",
+    "lab_forward_fill": "maximum 14 day(s)",
+    "vitals_forward_fill": "maximum 3 day(s)",
+    "critical_care_return": "critical-care return >72h starts a new baseline segment",
+    "sepsis": "delta SOFA >= 2 from the current operational baseline",
+    "vasopressors": "without dose, dobutamine/dopamine raise minimum score to 2 and noradrenaline/adrenaline to 3"
+  },
+  "n_rows_sofa_total_ge_2": 106217,
+  "pct_rows_sofa_total_ge_2": 38.3,
+  "n_episodes_sofa_total_ge_2": 18770,
+  "n_rows_delta_sofa_ge_2": 20605,
+  "pct_rows_delta_sofa_ge_2": 7.43,
+  "n_episodes_delta_sofa_ge_2": 5781,
+  "n_rows_sepsis": 20605,
+  "pct_rows_sepsis": 7.43,
+  "n_episodes_sepsis": 5781,
+  "n_rows_next_day_sepsis": 20542,
+  "n_rows_eligible_for_next_day_model": 224685,
+  "n_episodes_with_next_day_sepsis": 5768
+}

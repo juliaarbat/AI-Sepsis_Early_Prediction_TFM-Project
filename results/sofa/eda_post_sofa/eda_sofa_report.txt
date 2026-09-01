@@ -1,0 +1,22 @@
+SOFA SUMMARY
+Total rows: 277341
+
+Severity by total SOFA:
+Rows with SOFA total >= 2: 106217
+Percentage of rows with SOFA total >= 2: 38.30%
+Episodes with at least one SOFA total >= 2 day: 18770
+
+Deterioration versus the operational baseline:
+Rows with delta SOFA >= 2 versus the active baseline: 20605
+Percentage of rows with delta SOFA >= 2 versus the active baseline: 8.04%
+Episodes with at least one delta SOFA >= 2 day versus the active baseline: 5781
+
+Current sepsis definition:
+Sepsis = 1 when delta SOFA >= 2 versus the active operational SOFA baseline.
+Rows classified as sepsis: 20605
+Episodes classified as sepsis: 5781
+
+Baseline and delta distribution:
+Operational SOFA baseline median: 1.0
+Operational delta SOFA median: 0.0
+Operational delta SOFA p99: 3.0

@@ -1,0 +1,17 @@
+Temporal-gap exclusion rationale
+
+Rule used: exclude episodes with maximum temporal gap >30 days only when the episode has no evidence of a critical-care stay.
+
+Reasoning: a very large gap without a critical-care record is treated as an unexplained interruption of the daily episode timeline. A large gap with a critical-care record is kept because the missing days may be clinically explained by the critical-care stay and should not be removed automatically.
+
+Decision summary:
+- No large temporal gap: 31527 episodes (99.99%), median max gap 1.00 days, maximum 27.00 days, excluded 0.
+- Large gap with critical-care record: 4 episodes (0.01%), median max gap 34.50 days, maximum 63.00 days, excluded 0.
+- Large unexplained gap: 0 episodes (0.00%), median max gap 0.00 days, maximum 0.00 days, excluded 0.
+
+Generated files:
+- temporal_gap_decision_summary.csv
+- temporal_gap_threshold_sensitivity.csv
+- figures/temporal_gap_distribution.png
+- figures/temporal_gap_decision_counts.png
+- figures/temporal_gap_threshold_sensitivity.png

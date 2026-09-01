@@ -1,0 +1,24 @@
+{
+  "n_rows_after_cleaning": 277341,
+  "n_episodes_after_cleaning": 31531,
+  "n_excluded_episodes": 0,
+  "n_episodes_excluded_for_missing_components": 0,
+  "n_episodes_excluded_for_temporal_gap": 0,
+  "pct_excluded_episodes": 0.0,
+  "episode_gap_exclusion_threshold_days": 30,
+  "temporal_gap_criterion": "large_gap_without_critical_care_record",
+  "temporal_gap_exclusion_enabled": true,
+  "lab_ffill_limit_days": 14,
+  "vitals_ffill_limit_days": 3,
+  "critical_care_return_min_hours": 72,
+  "pre_sofa": {
+    "max_allowed_date": "2026-06-30",
+    "n_original_rows": 277341,
+    "n_rows_removed_invalid_data_index": 0,
+    "n_rows_removed_future_data_index": 0,
+    "n_exact_duplicate_rows_removed": 0,
+    "n_numeric_values_set_to_nan": 838,
+    "n_binary_values_set_to_nan": 0,
+    "n_rows_before_sofa_episode_exclusions": 277341
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "real_readmitted_2026": {
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\real_readmitted_2026",
+    "cohort": {
+      "n_rows": 206802,
+      "n_episodes": 26926,
+      "n_positive_rows": 18908,
+      "pct_positive_rows": 9.143,
+      "n_positive_episodes": 5303,
+      "n_patients": 20782,
+      "n_positive_patients": 4821
+    },
+    "splits": {
+      "real": {
+        "n_rows": 6128,
+        "n_episodes": 728,
+        "n_positive_rows": 632,
+        "pct_positive_rows": 10.313,
+        "n_positive_episodes": 139,
+        "n_patients": 655,
+        "n_positive_patients": 137
+      },
+      "test": {
+        "n_rows": 21482,
+        "n_episodes": 3274,
+        "n_positive_rows": 1808,
+        "pct_positive_rows": 8.416,
+        "n_positive_episodes": 615,
+        "n_patients": 3019,
+        "n_positive_patients": 597
+      },
+      "train": {
+        "n_rows": 153081,
+        "n_episodes": 19357,
+        "n_positive_rows": 14407,
+        "pct_positive_rows": 9.411,
+        "n_positive_episodes": 3895,
+        "n_patients": 14089,
+        "n_positive_patients": 3464
+      },
+      "valid": {
+        "n_rows": 26111,
+        "n_episodes": 3567,
+        "n_positive_rows": 2061,
+        "pct_positive_rows": 7.893,
+        "n_positive_episodes": 654,
+        "n_patients": 3019,
+        "n_positive_patients": 623
+      }
+    },
+    "filter_audit": {
+      "filtre_real_des_de_data_inici": true,
+      "real_start_date": "2026-01-01",
+      "files_eliminades": 10404
+    }
+  },
+  "real_new_2026": {
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\real_new_2026",
+    "cohort": {
+      "n_rows": 224685,
+      "n_episodes": 29197,
+      "n_positive_rows": 20542,
+      "pct_positive_rows": 9.143,
+      "n_positive_episodes": 5768,
+      "n_patients": 21991,
+      "n_positive_patients": 5188
+    },
+    "splits": {
+      "real": {
+        "n_rows": 7479,
+        "n_episodes": 1268,
+        "n_positive_rows": 594,
+        "pct_positive_rows": 7.942,
+        "n_positive_episodes": 241,
+        "n_patients": 1209,
+        "n_positive_patients": 237
+      },
+      "test": {
+        "n_rows": 25999,
+        "n_episodes": 3576,
+        "n_positive_rows": 2410,
+        "pct_positive_rows": 9.27,
+        "n_positive_episodes": 690,
+        "n_patients": 3118,
+        "n_positive_patients": 656
+      },
+      "train": {
+        "n_rows": 162543,
+        "n_episodes": 20505,
+        "n_positive_rows": 15265,
+        "pct_positive_rows": 9.391,
+        "n_positive_episodes": 4131,
+        "n_patients": 14547,
+        "n_positive_patients": 3635
+      },
+      "valid": {
+        "n_rows": 28664,
+        "n_episodes": 3848,
+        "n_positive_rows": 2273,
+        "pct_positive_rows": 7.93,
+        "n_positive_episodes": 706,
+        "n_patients": 3117,
+        "n_positive_patients": 660
+      }
+    },
+    "filter_audit": {
+      "filtre_real_des_de_data_inici": true,
+      "real_start_date": "2026-01-01",
+      "files_eliminades": 0
+    }
+  },
+  "real_all_2026": {
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\real_all_2026",
+    "cohort": {
+      "n_rows": 214281,
+      "n_episodes": 28194,
+      "n_positive_rows": 19502,
+      "pct_positive_rows": 9.101,
+      "n_positive_episodes": 5544,
+      "n_patients": 21991,
+      "n_positive_patients": 5058
+    },
+    "splits": {
+      "real": {
+        "n_rows": 13607,
+        "n_episodes": 1996,
+        "n_positive_rows": 1226,
+        "pct_positive_rows": 9.01,
+        "n_positive_episodes": 380,
+        "n_patients": 1864,
+        "n_positive_patients": 374
+      },
+      "test": {
+        "n_rows": 21482,
+        "n_episodes": 3274,
+        "n_positive_rows": 1808,
+        "pct_positive_rows": 8.416,
+        "n_positive_episodes": 615,
+        "n_patients": 3019,
+        "n_positive_patients": 597
+      },
+      "train": {
+        "n_rows": 153081,
+        "n_episodes": 19357,
+        "n_positive_rows": 14407,
+        "pct_positive_rows": 9.411,
+        "n_positive_episodes": 3895,
+        "n_patients": 14089,
+        "n_positive_patients": 3464
+      },
+      "valid": {
+        "n_rows": 26111,
+        "n_episodes": 3567,
+        "n_positive_rows": 2061,
+        "pct_positive_rows": 7.893,
+        "n_positive_episodes": 654,
+        "n_patients": 3019,
+        "n_positive_patients": 623
+      }
+    },
+    "filter_audit": {
+      "filtre_real_des_de_data_inici": true,
+      "real_start_date": "2026-01-01",
+      "files_eliminades": 10404
+    }
+  },
+  "comparison": {
+    "results": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\classic_models_24h_real_overlap_comparison.csv",
+    "splits": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\classic_models_24h_real_overlap_splits.csv",
+    "figures_index": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\classic_models_24h_real_overlap_figures_index.json",
+    "figures": {
+      "auprc_test_real": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\figures\\01_auprc_test_real_by_policy.png",
+      "auroc_test_real": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\figures\\02_auroc_test_real_by_policy.png",
+      "delta_auprc_real_test": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\figures\\03_delta_auprc_real_minus_test.png",
+      "splits_rows": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\figures\\04_split_size_by_policy.png",
+      "splits_prevalence": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\comparison\\figures\\05_split_prevalence_by_policy.png"
+    }
+  }
+}

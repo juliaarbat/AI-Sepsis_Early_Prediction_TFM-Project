@@ -1,0 +1,46 @@
+GENERAL COHORT EDA
+Total rows: 277341
+Total columns: 112
+
+TOP VARIABLES WITH MOST MISSING VALUES:
+- Urine output: 99.99%
+- Albumin: 99.99%
+- bal organism: 99.92%
+- Fibrinogen: 99.49%
+- broncoaspirat organism: 98.5%
+- bilirubin total pre return critical care 3d: 97.64%
+- date bilirubin total pre return critical care 3d: 97.64%
+- creatinine pre return critical care 3d: 96.72%
+- date creatinine pre return critical care 3d: 96.72%
+- date platelets pre return critical care 3d: 96.72%
+
+AVERAGE COVERAGE BY BLOCK:
+- Admission and demographics: 100.0%
+- Comorbidities: 100.0%
+- Medication and treatment: 100.0%
+- Surgery and critical care: 88.25%
+- Vital signs and monitoring: 67.02%
+- Microbiology and colonisation: 56.76%
+- Laboratory: 18.89%
+
+MOST PREVALENT BINARY VARIABLES:
+- Active antibiotic: 43.94%
+- Critical care stay: 40.45%
+- Surgery: 40.08%
+- Solid neoplasm: 30.31%
+- Previous positive culture 90d: 28.03%
+- Diabetes mellitus: 27.31%
+- Urgent surgery: 20.93%
+- Recent hospitalization 90d: 19.99%
+
+MOST FREQUENT ADMISSION DIAGNOSIS GROUPS:
+- Cardiovascular: 19.47%
+- Oncology: 17.41%
+- Injury and trauma: 14.45%
+- Digestive: 13.08%
+- Respiratory: 9.01%
+- Genitourinary: 5.28%
+- Obstetric: 4.09%
+- Musculoskeletal: 3.39%
+- Neurology: 3.13%
+- Endocrine and metabolic: 2.38%

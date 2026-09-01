@@ -1,0 +1,32 @@
+CRITERIA FOR DECIDING WHEN TO REMOVE VARIABLES
+
+1. Before computing SOFA
+   No predictive variable selection is performed at this stage. Cleaning is
+   limited to the minimum needed to compute SOFA reliably: invalid or future
+   dates, exact duplicate rows, physiologically implausible values, and
+   inconsistent binary flags. Episodes with excessive missingness in SOFA
+   components are also excluded, as are episodes with very large unexplained
+   temporal gaps and no critical-care record.
+
+2. During SOFA computation
+   Original variables are preserved whenever possible. Operational decisions
+   are recorded in derived columns: ambient FiO2 assumptions, normal Glasgow
+   assumptions, normal bilirubin assumptions, time-limited forward fills, and
+   respiratory ratio type. Creatinine and platelets are not imputed as normal
+   when no recent value is available.
+
+3. After computing SOFA
+   The post-SOFA EDA reviews SOFA prevalence, score distribution, component
+   coverage, and the signal in `next_day_sepsis`. This step helps identify
+   candidate variables for later exclusion or review, but it does not modify
+   the base dataset.
+
+4. Before/inside the models
+   Final predictor selection is performed inside the model preprocessing.
+   Missingness, category handling, and exclusion rules are learned only from
+   the training split to prevent leakage. Recommended criteria:
+   - remove variables with >80% missingness in train;
+   - remove identifiers, absolute dates, and future-information variables;
+   - remove SOFA-derived variables when they would leak outcome information;
+   - keep clinically meaningful variables with moderate missingness, adding a
+     missingness indicator when needed.

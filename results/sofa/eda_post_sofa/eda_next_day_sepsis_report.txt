@@ -1,0 +1,14 @@
+PREDICTIVE SUMMARY: SEPSIS ON THE FOLLOWING DAY
+Total rows: 224685
+Rows classified as sepsis tomorrow: 20542 (9.14%)
+Episodes classified as sepsis tomorrow: 5768 (19.76%)
+
+NUMERIC VARIABLES WITH THE LARGEST BETWEEN-GROUP DIFFERENCE:
+- Platelets: mean no sepsis tomorrow=264.252, mean sepsis tomorrow=193.632, Cohen d=-0.52, p=0.0
+- Glasgow: mean no sepsis tomorrow=14.977, mean sepsis tomorrow=14.841, Cohen d=-0.331, p=1.9692985667637636e-100
+- MAP: mean no sepsis tomorrow=88.978, mean sepsis tomorrow=85.448, Cohen d=-0.28, p=1.8055945371993394e-207
+- Total bilirubin: mean no sepsis tomorrow=0.721, mean sepsis tomorrow=0.996, Cohen d=0.217, p=2.281517433987863e-97
+- Creatinine: mean no sepsis tomorrow=1.061, mean sepsis tomorrow=1.265, Cohen d=0.198, p=1.0509402974700122e-124
+- Temperature: mean no sepsis tomorrow=36.229, mean sepsis tomorrow=36.31, Cohen d=0.148, p=1.299604309709352e-59
+- Leukocytes: mean no sepsis tomorrow=9.981, mean sepsis tomorrow=9.282, Cohen d=-0.102, p=1.5028875333842317e-23
+- O2 saturation: mean no sepsis tomorrow=95.83, mean sepsis tomorrow=96.018, Cohen d=0.083, p=2.529895797033945e-19

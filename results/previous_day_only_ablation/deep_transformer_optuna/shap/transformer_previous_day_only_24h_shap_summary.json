@@ -1,0 +1,22 @@
+{
+  "objective": "SHAP interpretation of the trained deep-learning model",
+  "note": "SHAP is calculated on a small sample. Temporal variables are aggregated across the days in the window, and one-hot variables are aggregated back to the original variable name. Positive direction means increased predicted sepsis probability. The beeswarm shows the top 20 variables after aggregating SHAP values by sample and variable.",
+  "model_key": "transformer",
+  "policy": "real_all_2026",
+  "policy_label": "Real 2026 - all patients",
+  "valid_auprc": NaN,
+  "valid_auroc": NaN,
+  "model_path": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_model.pt",
+  "metrics_path": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_comparable_metrics.csv",
+  "explained_split": "real",
+  "n_background_train": 64,
+  "n_explained_rows": 128,
+  "shap_nsamples": 100,
+  "outputs": {
+    "variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_variable_importance.csv",
+    "top_variables_figure": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_top20_variables.png",
+    "direction_figure": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_top20_variable_direction.png",
+    "beeswarm_top20": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_beeswarm_top20.png",
+    "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_summary.json"
+  }
+}

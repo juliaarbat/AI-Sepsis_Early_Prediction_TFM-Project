@@ -1,0 +1,100 @@
+{
+  "real_all_2026": {
+    "selected_model": "lightgbm",
+    "selection": {
+      "model": "lightgbm",
+      "criterion": "valid_auprc",
+      "value": 0.3735094271242088,
+      "valid_auroc": 0.8309457189806535,
+      "source": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\real_all_2026\\classic_models_24h_tuning.csv"
+    },
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm",
+    "optuna_execution": "new",
+    "optuna_criterion": "valid_auprc at D+1/row level",
+    "tuning_metrics": [
+      "valid_auprc",
+      "valid_auroc",
+      "valid_episode_auprc",
+      "valid_episode_auroc"
+    ],
+    "cohort": {
+      "n_rows": 214281,
+      "n_episodes": 28194,
+      "n_positive_rows": 19502,
+      "pct_positive_rows": 9.101,
+      "n_positive_episodes": 5544,
+      "n_patients": 21991,
+      "n_positive_patients": 5058
+    },
+    "splits": {
+      "real": {
+        "n_rows": 13607,
+        "n_episodes": 1996,
+        "n_positive_rows": 1226,
+        "pct_positive_rows": 9.01,
+        "n_positive_episodes": 380,
+        "n_patients": 1864,
+        "n_positive_patients": 374
+      },
+      "test": {
+        "n_rows": 21482,
+        "n_episodes": 3274,
+        "n_positive_rows": 1808,
+        "pct_positive_rows": 8.416,
+        "n_positive_episodes": 615,
+        "n_patients": 3019,
+        "n_positive_patients": 597
+      },
+      "train": {
+        "n_rows": 153081,
+        "n_episodes": 19357,
+        "n_positive_rows": 14407,
+        "pct_positive_rows": 9.411,
+        "n_positive_episodes": 3895,
+        "n_patients": 14089,
+        "n_positive_patients": 3464
+      },
+      "valid": {
+        "n_rows": 26111,
+        "n_episodes": 3567,
+        "n_positive_rows": 2061,
+        "pct_positive_rows": 7.893,
+        "n_positive_episodes": 654,
+        "n_patients": 3019,
+        "n_positive_patients": 623
+      }
+    },
+    "filter_audit": {
+      "filtre_real_des_de_data_inici": true,
+      "real_start_date": "2026-01-01",
+      "files_eliminades": 10404
+    },
+    "outputs": {
+      "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_summary.json",
+      "results": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_results.csv",
+      "predictions": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_predictions.csv",
+      "tuning": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_tuning.csv",
+      "cv_folds": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_cv_folds.csv",
+      "cv_summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_cv_summary.csv",
+      "model_pickle": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h.pkl",
+      "figures_index": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\classic_models_24h_figures_index.json",
+      "shap_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap"
+    },
+    "shap": {
+      "lightgbm": {
+        "variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_variable_importance.csv",
+        "top_variables_figure": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_top20_variables.png",
+        "beeswarm_top20": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_beeswarm_top20.png",
+        "dependence": {
+          "plaquetes": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\plaquetes_dependence.png",
+          "creatinina": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\creatinina_dependence.png",
+          "codi_servei_admissor__ONCSVDT": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\codi_servei_admissor__ONCSVDT_dependence.png",
+          "creatinina_previous_mean": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\creatinina_previous_mean_dependence.png",
+          "bilirubina_total": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\bilirubina_total_dependence.png",
+          "lactat_arterial_previous_mean": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\lactat_arterial_previous_mean_dependence.png"
+        },
+        "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_summary.json"
+      }
+    }
+  }
+}

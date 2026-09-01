@@ -1,0 +1,29 @@
+﻿variable;variable_label;n_total;n_no_null;n_null;pct_null;n_ones;pct_ones_among_total;pct_ones_among_non_null
+antibiotic;Active antibiotic;277341;277341;0;0,0;121865;43,94;43,94
+passa_per_critics;Critical care stay;277341;277341;0;0,0;112193;40,45;40,45
+cirurgia;Surgery;277341;277341;0;0,0;111154;40,08;40,08
+COMORB_NEOPLASIA_SOLIDA;Solid neoplasm;277341;277341;0;0,0;84060;30,31;30,31
+cultiu_positiu_previ_90d;Previous positive culture 90d;277341;277341;0;0,0;77741;28,03;28,03
+COMORB_DIABETES_MELLITUS;Diabetes mellitus;277341;277341;0;0,0;75749;27,31;27,31
+urgencia_cirurgia;Urgent surgery;277341;277341;0;0,0;58042;20,93;20,93
+hospitalitzacio_recent_90d;Recent hospitalization 90d;277341;277341;0;0,0;55444;19,99;19,99
+COMORB_MALNUTRICIO_SEVERA;Severe malnutrition;277341;277341;0;0,0;37854;13,65;13,65
+reingres_30d;Readmission 30d;277341;277341;0;0,0;35632;12,85;12,85
+COMORB_ENOLISME_SEVER;Severe alcohol use;277341;277341;0;0,0;29594;10,67;10,67
+hemocultiu_positiu;Positive blood culture;277341;277341;0;0,0;23606;8,51;8,51
+COMORB_NEOPLASIA_HEMATOLOGICA;Haematological neoplasm;277341;277341;0;0,0;20075;7,24;7,24
+COMORB_NEUTROPENIA_GREU;Severe neutropenia;277341;277341;0;0,0;16675;6,01;6,01
+COMORB_TRASPLANT_MOLL_OS;Bone marrow transplant;277341;277341;0;0,0;8826;3,18;3,18
+COMORB_IRC_DIALISI;Chronic kidney disease on dialysis;277341;277341;0;0,0;7838;2,83;2,83
+COMORB_CIRROSI_HEPATICA;Liver cirrhosis;277341;277341;0;0,0;6369;2,3;2,3
+vasopressor_qualsevol;Vasopressor;277341;277341;0;0,0;4246;1,53;1,53
+COMORB_MALABSORTIVES;Malabsorptive disorder;277341;277341;0;0,0;4131;1,49;1,49
+COMORB_ASPLENIA;Asplenia;277341;277341;0;0,0;4074;1,47;1,47
+COMORB_TRASPLANT_ORGAN_SOLID;Solid organ transplant;277341;277341;0;0,0;2888;1,04;1,04
+COMORB_ESPLENECTOMIA;Splenectomy;277341;277341;0;0,0;2628;0,95;0,95
+ag_pneumococ;Pneumococcal antigen;277341;277341;0;0,0;1502;0,54;0,54
+COMORB_VIH_SIDA;HIV/AIDS;277341;277341;0;0,0;1371;0,49;0,49
+COMORB_HIPOGAMMAGLOBULINEMIA;Hypogammaglobulinemia;277341;277341;0;0,0;496;0,18;0,18
+vasopressor_multiple;Multiple vasopressors;277341;277341;0;0,0;327;0,12;0,12
+ag_legionella;Legionella antigen;277341;277341;0;0,0;126;0,05;0,05
+COMORB_AGAMMAGLOBULINEMIA;Agammaglobulinemia;277341;277341;0;0,0;0;0,0;0,0

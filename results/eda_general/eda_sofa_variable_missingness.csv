@@ -1,0 +1,17 @@
+﻿variable;variable_label;present_in_table;n_no_null;pct_no_null;pct_null
+PaFi;PaFi;0;0;0,0;100,0
+SaFi;SaFi;0;0;0,0;100,0
+respiratory_ratio;respiratory ratio;0;0;0,0;100,0
+DIURESIS;Urine output;1;35;0,01;99,99
+GLASGOW;Glasgow;1;10228;3,69;96,31
+FIO2;FiO2;1;11407;4,11;95,89
+pao2_arterial;Arterial PaO2;1;24428;8,81;91,19
+bilirubina_total;Total bilirubin;1;65399;23,58;76,42
+creatinina;Creatinine;1;130289;46,98;53,02
+plaquetes;Platelets;1;132006;47,6;52,4
+TAM;MAP;1;231961;83,64;16,36
+O2SAT;O2 saturation;1;240537;86,73;13,27
+vasopressor_dopamina;vasopressor dopamina;1;277341;100,0;0,0
+vasopressor_dobutamina;vasopressor dobutamina;1;277341;100,0;0,0
+vasopressor_qualsevol;Vasopressor;1;277341;100,0;0,0
+vasopressor_noradrenalina;vasopressor noradrenalina;1;277341;100,0;0,0

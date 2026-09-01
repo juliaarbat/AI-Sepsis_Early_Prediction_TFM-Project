@@ -1,0 +1,21 @@
+﻿admission_diagnosis;admission_diagnosis_group;n_rows;pct_rows
+I21.4;Cardiovascular;3941;1,42
+Z51.11;Healthcare contact and follow-up;3400;1,23
+J18.9;Respiratory;3160;1,14
+G89.3;Neurology;2273;0,82
+N17.9;Genitourinary;2211;0,8
+C20;Oncology;2177;0,78
+J44.0;Respiratory;2142;0,77
+C78.6;Oncology;2054;0,74
+C79.51;Oncology;1880;0,68
+I21.19;Cardiovascular;1874;0,68
+I26.99;Cardiovascular;1854;0,67
+C67.9;Oncology;1815;0,65
+I21.09;Cardiovascular;1704;0,61
+I11.0;Cardiovascular;1680;0,61
+I13.0;Cardiovascular;1632;0,59
+E11.52;Endocrine and metabolic;1592;0,57
+U07.1;Other;1580;0,57
+C92.00;Oncology;1550;0,56
+I35.0;Cardiovascular;1544;0,56
+E11.51;Endocrine and metabolic;1490;0,54

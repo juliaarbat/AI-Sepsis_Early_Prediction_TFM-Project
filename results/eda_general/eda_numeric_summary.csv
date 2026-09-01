@@ -1,0 +1,15 @@
+﻿variable;variable_label;pct_null;min;p01;median;mean;p99;max
+edat;Age;0,0;18,0;21,0;67,0;64,252;94,0;102,0
+TAM;MAP;16,36;20,0;62,0;89,0;89,039;120,0;215,0
+RESP;Respiratory rate;12,46;4,0;13,0;17,0;17,357;24,0;80,0
+O2SAT;O2 saturation;13,27;40,0;90,0;96,0;95,852;100,0;100,0
+TEMP;Temperature;9,4;30,8;35,0;36,2;36,207;37,8;41,7
+GLASGOW;Glasgow;96,31;1,0;6,0;15,0;14,122;15,0;15,0
+DIURESIS;Urine output;99,99;1,0;1,68;300,0;322,971;866,0;900,0
+creatinina;Creatinine;53,02;0,01;0,338;0,832;1,145;6,45;20,0
+bilirubina_total;Total bilirubin;76,42;0,034;0,146;0,43;0,9;10,06;39,38
+plaquetes;Platelets;52,4;1,0;12,0;226,0;247,337;720,0;1912,0
+leucocits;Leukocytes;52,4;0,01;0,28;8,83;9,798;29,13;199,63
+lactat_arterial;Arterial lactate;91,22;2,0;4,0;11,0;12,526;43,0;153,0
+lactat_venos;Venous lactate;92,36;2,5;5,0;13,0;15,412;53,0;153,0
+temps_cirurgia;Surgery time;38,92;0,0;0,0;0,0;0,045;1,267;22,583

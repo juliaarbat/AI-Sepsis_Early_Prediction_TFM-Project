@@ -1,0 +1,27 @@
+{
+  "objective": "SHAP interpretability for the trained classic model",
+  "model_key": "lightgbm",
+  "label": "LightGBM",
+  "real_overlap_policy": "real_all_2026",
+  "policy": "Real 2026 - all patients",
+  "explained_split": "real",
+  "split_rows": 13607,
+  "explained_rows": 512,
+  "sample_n": 512,
+  "sample_seed": 42,
+  "note": "SHAP is computed on a sample from the requested split. One-hot variables and missingness indicators are aggregated back to the original variable name; the beeswarm shows the top 20 variables by aggregated mean_abs_shap.",
+  "outputs": {
+    "variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_variable_importance.csv",
+    "top_variables_figure": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_top20_variables.png",
+    "beeswarm_top20": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_beeswarm_top20.png",
+    "dependence": {
+      "plaquetes": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\plaquetes_dependence.png",
+      "creatinina": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\creatinina_dependence.png",
+      "codi_servei_admissor__ONCSVDT": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\codi_servei_admissor__ONCSVDT_dependence.png",
+      "creatinina_previous_mean": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\creatinina_previous_mean_dependence.png",
+      "bilirubina_total": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\bilirubina_total_dependence.png",
+      "lactat_arterial_previous_mean": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\dependence\\lactat_arterial_previous_mean_dependence.png"
+    },
+    "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\models_classics_24h\\optuna_best\\real_all_2026\\lightgbm\\shap\\lightgbm_shap_summary.json"
+  }
+}

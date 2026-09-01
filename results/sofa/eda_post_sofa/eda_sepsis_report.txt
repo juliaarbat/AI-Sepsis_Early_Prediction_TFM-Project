@@ -1,0 +1,14 @@
+SEPSIS SUMMARY
+Total rows: 277341
+Rows classified as sepsis: 20605 (7.43%)
+Episodes classified as sepsis: 5781 (18.33%)
+
+NUMERIC VARIABLES WITH THE LARGEST BETWEEN-GROUP DIFFERENCE:
+- Platelets: mean no sepsis=262.79, mean sepsis=190.676, Cohen d=-0.539, p=0.0
+- MAP: mean no sepsis=89.477, mean sepsis=82.756, Cohen d=-0.533, p=0.0
+- Glasgow: mean no sepsis=14.982, mean sepsis=14.792, Cohen d=-0.487, p=3.2974726198003595e-149
+- Total bilirubin: mean no sepsis=0.724, mean sepsis=1.024, Cohen d=0.251, p=5.817599840590352e-107
+- Creatinine: mean no sepsis=1.054, mean sepsis=1.296, Cohen d=0.24, p=2.489150173515803e-170
+- Leukocytes: mean no sepsis=9.899, mean sepsis=8.858, Cohen d=-0.155, p=5.588384315033466e-49
+- Temperature: mean no sepsis=36.201, mean sepsis=36.286, Cohen d=0.154, p=8.278695396488918e-70
+- Respiratory rate: mean no sepsis=17.345, mean sepsis=17.51, Cohen d=0.076, p=5.75336136512249e-15

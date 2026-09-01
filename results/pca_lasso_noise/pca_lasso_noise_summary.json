@@ -1,0 +1,300 @@
+{
+  "objective": "Exploration of potentially noisy variables with PCA and logistic LASSO",
+  "target": "next_day_sepsis",
+  "split_sizes": {
+    "train": 153081,
+    "valid": 26111,
+    "test": 21482,
+    "real": 24011
+  },
+  "config": {
+    "max_missing_ratio": 0.8,
+    "shared_episode_missingness_threshold": 0.5,
+    "real_start_date": "2026-01-01",
+    "real_overlap_policy": "real_all_2026",
+    "split_unit": "patient"
+  },
+  "preprocessing": {
+    "n_numeric_columns": 83,
+    "n_categorical_columns": 6,
+    "n_model_features": 267,
+    "n_excluded_leakage_columns": 72,
+    "excluded_leakage_columns": [
+      "DataAlta",
+      "DataIngres",
+      "DataIniciUrgencies",
+      "Episodi",
+      "FIO2 imputed ambient air",
+      "FIO2 original",
+      "GLASGOW imputed normal",
+      "GLASGOW original",
+      "Nhc",
+      "O2SAT forward filled",
+      "O2SAT original",
+      "PaFi",
+      "SaFi",
+      "TAM forward filled",
+      "TAM original",
+      "Total bilirubin forward filled",
+      "Total bilirubin imputed normal",
+      "Total bilirubin original",
+      "Total bilirubin pre critical return used",
+      "Total bilirubin pre retorn critics 3d",
+      "Total bilirubin without recent value",
+      "Creatinine forward filled",
+      "Creatinine imputed normal",
+      "Creatinine original",
+      "Creatinine pre critical return used",
+      "Creatinine pre retorn critics 3d",
+      "Creatinine without recent value",
+      "data Total bilirubin pre retorn critics 3d",
+      "data Creatinine pre retorn critics 3d",
+      "data hora alta critics",
+      "data index",
+      "data Platelets pre retorn critics 3d",
+      "delta sofa assumed zero",
+      "eligible next day model row",
+      "episode sepsis",
+      "first day baseline sofa",
+      "first day delta sofa",
+      "first sepsis date",
+      "Positive blood culture data extraccio",
+      "hours to next day",
+      "next day sepsis",
+      "operational baseline date",
+      "operational baseline relative day",
+      "operational baseline segment",
+      "operational baseline sofa",
+      "operational baseline sofa available",
+      "operational baseline sofa index",
+      "operational baseline sofa sufficient",
+      "organ dysfunction sofa ge 2",
+      "Arterial PaO2 original",
+      "passa per critics",
+      "Platelets forward filled",
+      "Platelets imputed normal",
+      "Platelets original",
+      "Platelets pre critical return used",
+      "Platelets pre retorn critics 3d",
+      "Platelets without recent value",
+      "pre operational baseline row",
+      "respiratory ratio",
+      "respiratory ratio type",
+      "sepsis",
+      "sofa available components",
+      "sofa cardiovascular",
+      "sofa coagulation",
+      "sofa hepatic",
+      "sofa neurologic",
+      "sofa renal",
+      "sofa respiratory",
+      "sofa total",
+      "sofa total ge 2",
+      "temps Surgery disponible",
+      "temps critics"
+    ],
+    "n_excluded_high_missing_columns": 23,
+    "excluded_high_missing_columns": [
+      "DIURESIS",
+      "Arterial pH",
+      "Arterial PaO2",
+      "Arterial PaCO2",
+      "Arterial bicarbonate",
+      "Arterial base excess",
+      "Arterial lactate",
+      "Venous pH",
+      "Venous PaO2",
+      "Venous PaCO2",
+      "Venous bicarbonate",
+      "Venous base excess",
+      "Venous lactate",
+      "fibrinogen",
+      "Procalcitonin",
+      "albumina",
+      "Total proteins",
+      "Troponin",
+      "Blood culture organism",
+      "Blood culture time to positivity h",
+      "Tracheal aspirate organism",
+      "Bronchoaspirate organism",
+      "BAL organism"
+    ]
+  },
+  "preparation_info": {
+    "n_rows": 224685,
+    "anti_leakage_excluded_variables": [
+      "n_missing_sofa_components",
+      "pct_missing_sofa_components_row",
+      "sofa_cardiovascular_available",
+      "sofa_coagulation_available",
+      "sofa_hepatic_available",
+      "sofa_neurologic_available",
+      "sofa_renal_available",
+      "sofa_respiratory_available"
+    ],
+    "microbiology_excluded_variables": [],
+    "microbiology_audit": {
+      "criterion": "Temporal microbiology availability is built in SQL. Python does not re-anchor or exclude microbiology by default; it only audits whether positive blood cultures exist before the availability date.",
+      "python_handling": "unchanged",
+      "present_microbiology_variables": [
+        "ag_legionella",
+        "ag_pneumococ",
+        "aspirat_traqueal_germen",
+        "bal_germen",
+        "broncoaspirat_germen",
+        "colonitzacio_previa_blee",
+        "colonitzacio_previa_cre",
+        "colonitzacio_previa_mrsa",
+        "colonitzacio_previa_vre",
+        "cultiu_positiu_previ_90d",
+        "hemocultiu_germen",
+        "hemocultiu_positiu",
+        "hemocultiu_temps_positivitat_h",
+        "urocultiu_resultat"
+      ],
+      "default_excluded_microbiology_variables": [],
+      "blood_culture_availability_audit": "calculated",
+      "positive_blood_culture_rows": 21820,
+      "positive_blood_culture_rows_before_availability": 0,
+      "positive_blood_culture_rows_without_anchor": 0
+    },
+    "temporal_features": {
+      "created_columns": [
+        "SBP_previous_mean",
+        "DBP_previous_mean",
+        "TAM_previous_mean",
+        "HR_previous_mean",
+        "RESP_previous_mean",
+        "O2SAT_previous_mean",
+        "TEMP_previous_mean",
+        "lactat_arterial_previous_mean",
+        "lactat_venos_previous_mean",
+        "leucocits_previous_mean",
+        "pcr_previous_mean",
+        "procalcitonina_previous_mean",
+        "creatinina_previous_mean"
+      ]
+    }
+  },
+  "split_info": {
+    "split_unit": "patient",
+    "real_overlap_policy": "real_all_2026",
+    "real_start_date": "2026-01-01",
+    "train_units": 14089,
+    "valid_units": 3019,
+    "test_units": 3019,
+    "real_units": 1864,
+    "excluded_units": 0,
+    "unit_exclusion_reason": null,
+    "real_readmitted_units": 655,
+    "real_new_units": 1209
+  },
+  "lasso_metrics": {
+    "best": {
+      "C": 0.01,
+      "valid_auprc": 0.259501602107345,
+      "valid_auroc": 0.7833581582926561,
+      "n_features_non_zero": 120,
+      "pct_features_non_zero": 0.449438202247191
+    },
+    "splits": {
+      "train": {
+        "n": 153081,
+        "positives": 14407,
+        "prevalence": 0.09411357385959067,
+        "auprc": 0.3302711428751755,
+        "auroc": 0.7937873929991697
+      },
+      "valid": {
+        "n": 26111,
+        "positives": 2061,
+        "prevalence": 0.07893225077553521,
+        "auprc": 0.259501602107345,
+        "auroc": 0.7833581582926561
+      },
+      "test": {
+        "n": 21482,
+        "positives": 1808,
+        "prevalence": 0.08416348570896565,
+        "auprc": 0.262752455623978,
+        "auroc": 0.7600546822498766
+      },
+      "real": {
+        "n": 24011,
+        "positives": 2266,
+        "prevalence": 0.09437341218608138,
+        "auprc": 0.31458607792077087,
+        "auroc": 0.7817408999481877
+      }
+    }
+  },
+  "pca_first_components": [
+    {
+      "component": 1,
+      "explained_variance_ratio": 0.053740518011242334,
+      "cumulative_explained_variance": 0.053740518011242334
+    },
+    {
+      "component": 2,
+      "explained_variance_ratio": 0.05221975675638364,
+      "cumulative_explained_variance": 0.10596027476762598
+    },
+    {
+      "component": 3,
+      "explained_variance_ratio": 0.04782726281656841,
+      "cumulative_explained_variance": 0.1537875375841944
+    },
+    {
+      "component": 4,
+      "explained_variance_ratio": 0.0347000888268487,
+      "cumulative_explained_variance": 0.18848762641104308
+    },
+    {
+      "component": 5,
+      "explained_variance_ratio": 0.03318898960950183,
+      "cumulative_explained_variance": 0.22167661602054492
+    },
+    {
+      "component": 6,
+      "explained_variance_ratio": 0.029038738115344045,
+      "cumulative_explained_variance": 0.25071535413588897
+    },
+    {
+      "component": 7,
+      "explained_variance_ratio": 0.025825476968465596,
+      "cumulative_explained_variance": 0.27654083110435457
+    },
+    {
+      "component": 8,
+      "explained_variance_ratio": 0.0240763285357318,
+      "cumulative_explained_variance": 0.3006171596400864
+    },
+    {
+      "component": 9,
+      "explained_variance_ratio": 0.02248927691881519,
+      "cumulative_explained_variance": 0.3231064365589016
+    },
+    {
+      "component": 10,
+      "explained_variance_ratio": 0.021816853645488046,
+      "cumulative_explained_variance": 0.3449232902043896
+    }
+  ],
+  "n_possible_noise_variables": 2,
+  "top_possible_noise_variables": [
+    {
+      "variable": "COMORB AGAMMAGLOBULINEMIA",
+      "n_features": 2,
+      "max_lasso_abs_coef": 0.0,
+      "max_pca_weighted_loading": 5.3036862685639265e-37,
+      "missing_ratio_train_original": 0.0
+    },
+    {
+      "variable": "Adrenaline vasopressor",
+      "n_features": 2,
+      "max_lasso_abs_coef": 0.0,
+      "max_pca_weighted_loading": 0.0,
+      "missing_ratio_train_original": 0.0
+    }
+  ]
+}

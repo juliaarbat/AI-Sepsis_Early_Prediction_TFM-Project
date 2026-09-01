@@ -1,0 +1,124 @@
+{
+  "objective": "Ablation analysis testing whether the best models retain performance when restricted to the immediately preceding patient-day.",
+  "real_policy": "real_all_2026",
+  "real_start_date": "2026-01-01",
+  "classic": {
+    "model": "lightgbm",
+    "mode": "same-day tabular predictors; temporal-window features disabled",
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna",
+    "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna\\classic_models_24h_summary.json",
+    "results": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna\\classic_models_24h_results.csv",
+    "tuning": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna\\classic_models_24h_tuning.csv",
+    "variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna\\classic_models_24h_variable_importance.csv",
+    "shap_variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\classic_lightgbm_optuna\\shap\\lightgbm_shap_variable_importance.csv",
+    "optuna_trials": 30,
+    "cohort": {
+      "n_rows": 214281,
+      "n_episodes": 28194,
+      "n_positive_rows": 19502,
+      "pct_positive_rows": 9.101,
+      "n_positive_episodes": 5544,
+      "n_patients": 21991,
+      "n_positive_patients": 5058
+    },
+    "splits": {
+      "real": {
+        "n_rows": 13607,
+        "n_episodes": 1996,
+        "n_positive_rows": 1226,
+        "pct_positive_rows": 9.01,
+        "n_positive_episodes": 380,
+        "n_patients": 1864,
+        "n_positive_patients": 374
+      },
+      "test": {
+        "n_rows": 21482,
+        "n_episodes": 3274,
+        "n_positive_rows": 1808,
+        "pct_positive_rows": 8.416,
+        "n_positive_episodes": 615,
+        "n_patients": 3019,
+        "n_positive_patients": 597
+      },
+      "train": {
+        "n_rows": 153081,
+        "n_episodes": 19357,
+        "n_positive_rows": 14407,
+        "pct_positive_rows": 9.411,
+        "n_positive_episodes": 3895,
+        "n_patients": 14089,
+        "n_positive_patients": 3464
+      },
+      "valid": {
+        "n_rows": 26111,
+        "n_episodes": 3567,
+        "n_positive_rows": 2061,
+        "pct_positive_rows": 7.893,
+        "n_positive_episodes": 654,
+        "n_patients": 3019,
+        "n_positive_patients": 623
+      }
+    }
+  },
+  "deep_learning": {
+    "model": "transformer",
+    "mode": "sequence model with lookback_days fixed to 1",
+    "output_dir": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna",
+    "summary": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_summary.json",
+    "metrics": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_comparable_metrics.csv",
+    "tuning": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_tuning.csv",
+    "model_path": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\transformer_previous_day_only_24h_model.pt",
+    "shap_variable_importance": "C:\\Users\\Júlia\\PycharmProjects\\TFM_Sepsis\\outputs\\previous_day_only_ablation\\deep_transformer_optuna\\shap\\transformer_previous_day_only_24h_shap_variable_importance.csv",
+    "output_prefix": "transformer_previous_day_only_24h",
+    "optuna_trials": 15,
+    "tune_lookback_days": false,
+    "cohort": {
+      "n_rows": 175416,
+      "n_episodes": 24169,
+      "n_positive_rows": 16057,
+      "pct_positive_rows": 9.154,
+      "n_positive_episodes": 4652,
+      "n_patients": 20406,
+      "n_positive_patients": 4381
+    },
+    "splits": {
+      "real": {
+        "n_rows": 13607,
+        "n_episodes": 1996,
+        "n_positive_rows": 1226,
+        "pct_positive_rows": 9.01,
+        "n_positive_episodes": 380,
+        "n_patients": 1864,
+        "n_positive_patients": 374
+      },
+      "test": {
+        "n_rows": 19405,
+        "n_episodes": 2950,
+        "n_positive_rows": 1638,
+        "pct_positive_rows": 8.441,
+        "n_positive_episodes": 559,
+        "n_patients": 2725,
+        "n_positive_patients": 542
+      },
+      "train": {
+        "n_rows": 124966,
+        "n_episodes": 16528,
+        "n_positive_rows": 11900,
+        "pct_positive_rows": 9.523,
+        "n_positive_episodes": 3264,
+        "n_patients": 13318,
+        "n_positive_patients": 3023
+      },
+      "valid": {
+        "n_rows": 17438,
+        "n_episodes": 2695,
+        "n_positive_rows": 1293,
+        "pct_positive_rows": 7.415,
+        "n_positive_episodes": 449,
+        "n_patients": 2499,
+        "n_positive_patients": 442
+      }
+    }
+  },
+  "next_step": "Run scripts/12_previous_day_only_figures.py after this script finishes."
+}
